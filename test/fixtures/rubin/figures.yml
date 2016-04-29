@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  displayable_id: 
+  displayable_type: Displayable
+  caption: MyText
+
+two:
+  displayable_id: 
+  displayable_type: Displayable
+  caption: MyText
