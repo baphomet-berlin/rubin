@@ -2,6 +2,8 @@ PATH
   remote: .
   specs:
     rubin (0.0.1)
+      embedly (~> 1.9.1)
+      paperclip (~> 4.3)
       rails (~> 4.2.6)
 
 GEM
@@ -44,7 +46,15 @@ GEM
       tzinfo (~> 1.1)
     arel (6.0.3)
     builder (3.2.2)
+    climate_control (0.0.3)
+      activesupport (>= 3.0)
+    cocaine (0.5.8)
+      climate_control (>= 0.0.3, < 1.0)
     concurrent-ruby (1.0.1)
+    embedly (1.9.1)
+      json
+      oauth
+      querystring
     erubis (2.7.0)
     globalid (0.3.6)
       activesupport (>= 4.1.0)
@@ -57,10 +67,19 @@ GEM
     mime-types (3.0)
       mime-types-data (~> 3.2015)
     mime-types-data (3.2016.0221)
+    mimemagic (0.3.0)
     mini_portile2 (2.0.0)
     minitest (5.8.4)
     nokogiri (1.6.7.2)
       mini_portile2 (~> 2.0.0.rc2)
+    oauth (0.5.1)
+    paperclip (4.3.6)
+      activemodel (>= 3.2.0)
+      activesupport (>= 3.2.0)
+      cocaine (~> 0.5.5)
+      mime-types
+      mimemagic (= 0.3.0)
+    querystring (0.1.0)
     rack (1.6.4)
     rack-test (0.6.3)
       rack (>= 1.0)
