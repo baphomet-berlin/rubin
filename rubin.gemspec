@@ -9,9 +9,9 @@ Gem::Specification.new do |s|
   s.version     = "0.1.0"
   s.authors     = [""]
   s.email       = ["cbrandolino@gmail.com"]
-  s.homepage    = "TODO"
-  s.summary     = "TODO: Summary of Rubin."
-  s.description = "TODO: Description of Rubin."
+  s.homepage    = "http://github.com/baphomet-berlin/rubin"
+  s.summary     = "Summary of Rubin."
+  s.description = "Description of Rubin."
   s.license     = "MIT"
 
   s.files = Dir["{app,config,db,lib}/**/*", "MIT-LICENSE", "Rakefile", "README.rdoc"]
