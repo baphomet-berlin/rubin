@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160429033809) do
+ActiveRecord::Schema.define(version: 20160429053614) do
 
   create_table "rubin_embedlies", force: :cascade do |t|
     t.string   "title"
@@ -25,6 +25,17 @@ ActiveRecord::Schema.define(version: 20160429033809) do
     t.datetime "created_at",           null: false
     t.datetime "updated_at",           null: false
   end
+
+  create_table "rubin_figurable_figures", force: :cascade do |t|
+    t.integer  "figurable_id"
+    t.string   "figurable_type"
+    t.integer  "figure_id"
+    t.datetime "created_at",     null: false
+    t.datetime "updated_at",     null: false
+  end
+
+  add_index "rubin_figurable_figures", ["figurable_type", "figurable_id"], name: "index_rubin_join_figurable"
+  add_index "rubin_figurable_figures", ["figure_id"], name: "index_rubin_join_figure"
 
   create_table "rubin_figures", force: :cascade do |t|
     t.integer  "displayable_id"
