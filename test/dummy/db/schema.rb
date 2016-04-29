@@ -11,7 +11,20 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160429031825) do
+ActiveRecord::Schema.define(version: 20160429033809) do
+
+  create_table "rubin_embedlies", force: :cascade do |t|
+    t.string   "title"
+    t.string   "provider"
+    t.string   "original_url"
+    t.text     "code"
+    t.string   "preview_file_name"
+    t.string   "preview_content_type"
+    t.integer  "preview_file_size"
+    t.datetime "preview_updated_at"
+    t.datetime "created_at",           null: false
+    t.datetime "updated_at",           null: false
+  end
 
   create_table "rubin_figures", force: :cascade do |t|
     t.integer  "displayable_id"

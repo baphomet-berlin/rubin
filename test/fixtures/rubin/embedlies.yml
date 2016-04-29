@@ -2,6 +2,10 @@
 
 one:
   title: MyString1
+  provider: MyString2
+  code: MyText
 
 two:
-  title: MyString2
+  title: MyString1
+  provider: MyString2
+  code: MyText
