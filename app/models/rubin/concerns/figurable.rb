@@ -1,8 +1,7 @@
 module Rubin::Concerns::Figurable 
   extend ActiveSupport::Concern
   included do 
-    def bubu
-      'bibi'
-    end
+    has_many :figurable_figures, as: :figurable, class_name: 'Rubin::FigurableFigure'
+    has_many :figures, through: :figurable_figures
   end
 end
