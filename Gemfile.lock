@@ -1,10 +1,10 @@
 PATH
   remote: .
   specs:
-    rubin (0.0.1)
+    rubin (0.1.0)
       embedly (~> 1.9.1)
       paperclip (~> 4.3)
-      rails (~> 4.2.6)
+      rails (~> 4.2)
 
 GEM
   remote: https://rubygems.org/
