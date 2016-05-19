@@ -8,13 +8,10 @@ module Rubin
     end
     def name
       if self.displayable
-        "#{self.displayable_type.demodulize}: #{self.displayable.title}" 
+        "#{self.displayable_type.demodulize}: #{self.displayable.name}" 
       else
         self.id
       end
-    end
-    def insert_code
-      "fig[#{self.name}]"
     end
   end
 end
